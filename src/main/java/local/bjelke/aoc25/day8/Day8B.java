@@ -33,7 +33,7 @@ public class Day8B {
 
     record PPD(PointPair pp, double distance) {}
 
-    class ConnectedPoint {
+    static class ConnectedPoint {
         Point3D point;
         HashSet<ConnectedPoint> linked = new HashSet<>();
 
@@ -95,7 +95,6 @@ public class Day8B {
 
             int connectionCount = 1;
 
-            long lastAddedXProduct = 0;
             float lx = 0;
             float ly = 0;
 

@@ -19,9 +19,6 @@ public class Day8A {
                     Float.parseFloat(split[2])
             );
         }
-        double distance(Point3D p) {
-            return distance(this, p);
-        }
         static double distance(Point3D p1, Point3D p2) {
             return Math.sqrt(
                     (p1.x - p2.x) * (p1.x - p2.x) +
@@ -36,7 +33,7 @@ public class Day8A {
 
     record PPD(PointPair pp, double distance) {}
 
-    class ConnectedPoint {
+    static class ConnectedPoint {
         Point3D point;
         HashSet<ConnectedPoint> linked = new HashSet<>();
 
